@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JAV-CG @ ACM MM 2026</title>
+  <meta
+    name="description"
+    content="The 1st International Workshop on Joint Audio-Video Comprehension and Generation (JAV-CG), co-located with ACM Multimedia 2026 in Rio de Janeiro, Brazil."
+  />
+  <link rel="icon" href="./assets/images/JavisVerse.png" />
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+</head>
+<body>
+  <div class="page-shell">
+    <header class="site-nav">
+      <div class="container nav-row">
+        <a class="brand" href="#top" aria-label="JAV-CG 2026 home">
+          <img class="brand-logo" src="./assets/images/JavisVerse.png" alt="JavisVerse logo" />
+          <span class="brand-title">JAV-CG 2026</span>
+        </a>
+
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M4 7H20" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path>
+            <path d="M4 12H20" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path>
+            <path d="M4 17H20" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path>
+          </svg>
+        </button>
+
+        <nav class="nav-links" aria-label="Primary">
+          <a href="#about">About</a>
+          <a href="#dates">Important Dates</a>
+          <a href="#cfp">Call for Papers</a>
+          <a href="#speakers">Keynote Speakers</a>
+          <a href="#schedule">Tentative Schedule</a>
+          <a href="#organizers">Organizers</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <div class="eyebrow">ACM Multimedia 2026 Workshop</div>
+            <h1>
+              <span>JAV-CG</span>
+              <small>The 1st International Workshop on Joint Audio-Video Comprehension and Generation</small>
+            </h1>
+            <p class="hero-intro">
+              A dedicated forum for the next wave of audio-video intelligence, spanning robust multimodal
+              understanding, synchronized generation, and unified models that bridge perception and creation
+              in one end-to-end framework.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#cfp">Explore CFP</a>
+              <a class="btn btn-secondary" href="https://2026.acmmm.org/" target="_blank" rel="noopener noreferrer">ACM MM 2026</a>
+              <a class="btn btn-secondary" href="https://javisverse.github.io/">JavisVerse</a>
+            </div>
+          </div>
+
+          <aside class="hero-panel">
+            <span class="panel-label">At a Glance</span>
+            <div class="hero-stats">
+              <div class="hero-stat">
+                <strong>Rio de Janeiro, Brazil</strong>
+                <span>Co-located with ACM Multimedia 2026, November 10-14, 2026.</span>
+              </div>
+              <div class="hero-stat">
+                <strong>Three core pillars</strong>
+                <span>Audio-visual comprehension, audio-video generation, and unified audio-video frameworks.</span>
+              </div>
+              <div class="hero-stat">
+                <strong>Format</strong>
+                <span>Tentative hybrid-style program with invited talks, contributed papers, and panel discussion.</span>
+              </div>
+              <div class="hero-stat">
+                <strong>Submission focus</strong>
+                <span>Technical papers, position or perspective papers, and featured papers aligned with JAV-CG themes.</span>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section" id="about">
+        <div class="container">
+          <div class="section-top">
+            <div>
+              <span class="section-label">About</span>
+              <h2 class="section-title">Why a dedicated workshop on joint audio-video intelligence?</h2>
+            </div>
+          </div>
+
+          <div class="about-grid">
+            <article class="surface prose-card">
+              <p>
+                JAV-CG is positioned around the observation that real-world multimedia is naturally
+                <span class="inline-accent">audio-visual</span>, yet much of current multimodal research still treats
+                audio and video separately or asymmetrically.
+              </p>
+              <p>
+                Large language models and multimodal foundation models have significantly advanced reasoning over
+                text, images, and video. However, the <strong>audio modality remains under-integrated</strong> in many
+                systems despite being essential to how humans perceive events, actions, intent, emotion, and context.
+                Sounding videos are not simply vision plus a side channel. They are tightly coupled, temporally grounded,
+                and often semantically inseparable.
+              </p>
+              <p>
+                JAV-CG aims to build a focused forum for research that treats audio and video as a
+                <strong>joint intelligence problem</strong>. We are interested in models that can understand sounding scenes,
+                reason over cross-modal correspondences, generate synchronized multimedia outputs, and transfer knowledge
+                between understanding and creation.
+              </p>
+              <p>
+                The workshop centers on three interconnected directions: <strong>audio-visual comprehension and reasoning</strong>,
+                <strong>audio-video content generation</strong>, and <strong>unified frameworks</strong> that connect both within a single
+                model family. By bringing together researchers from multimedia, audio and speech, computer vision, and MLLM
+                communities, JAV-CG seeks to establish a sharper research agenda for next-generation audio-visual AI systems.
+              </p>
+            </article>
+
+            <aside class="surface aside-card">
+              <span class="panel-label">Research Scope</span>
+              <h3>Workshop focus</h3>
+              <ul class="spotlight-list">
+                <li>Robust understanding of sounding scenes, sound sources, events, and cross-modal reasoning.</li>
+                <li>Synchronized generation of audio and video from text, video, audio, or mixed multimodal prompts.</li>
+                <li>Unified architectures that bridge comprehension and generation rather than treating them as isolated tasks.</li>
+                <li>Datasets, benchmarks, metrics, safety, trustworthiness, and long-form reasoning for audio-visual models.</li>
+              </ul>
+              <div class="placeholder-banner">
+                This page already includes the finalized workshop theme and structure. Speaker portraits, final talk abstracts,
+                and any conference-specific submission links can be updated later without changing the overall page layout.
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="dates">
+        <div class="container">
+          <div class="section-top">
+            <div>
+              <span class="section-label">Important Dates</span>
+              <h2 class="section-title">Submission timeline and event milestones</h2>
+            </div>
+            <!-- <p>
+              Official workshop-paper dates below follow the ACM Multimedia 2026 workshop timeline. Items marked as
+              placeholder can be adjusted after the final workshop logistics are confirmed.
+            </p> -->
+          </div>
+
+          <div class="date-grid">
+            <article class="date-card">
+              <span class="date-badge">Official</span>
+              <h3>Workshop Paper Submission</h3>
+              <div class="date-value">11 June 2026</div>
+              <p>Deadline for workshop contributions under the ACM MM 2026 workshop schedule.</p>
+            </article>
+            <article class="date-card">
+              <span class="date-badge">Official</span>
+              <h3>Author Notification</h3>
+              <div class="date-value">30 July 2026</div>
+              <p>Notification for accepted workshop papers.</p>
+            </article>
+            <article class="date-card">
+              <span class="date-badge">Official</span>
+              <h3>Camera-Ready</h3>
+              <div class="date-value">06 August 2026</div>
+              <p>Final camera-ready material due according to ACM MM 2026 workshop schedule.</p>
+            </article>
+            <article class="date-card">
+              <span class="date-badge">Official</span>
+              <h3>Author Registration</h3>
+              <div class="date-value">13 August 2026</div>
+              <p>Registration deadline associated with accepted workshop contributions.</p>
+            </article>
+            <article class="date-card">
+              <span class="date-badge">Official</span>
+              <h3>ACM Multimedia 2026</h3>
+              <div class="date-value">10-14 November 2026</div>
+              <p>Conference venue: Rio de Janeiro, Brazil.</p>
+            </article>
+            <article class="date-card">
+              <span class="date-badge">Placeholder</span>
+              <h3>Workshop Day and Final Agenda</h3>
+              <div class="date-value">Coming Soon</div>
+              <p>Final keynote sequence, contributed paper slots, and exact workshop day will be updated here.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="cfp">
+        <div class="container">
+          <div class="section-top">
+            <div>
+              <span class="section-label">Call for Papers</span>
+              <h2 class="section-title">Welcomes submissions across understanding, generation, and unified AV modeling</h2>
+            </div>
+            <!-- <p>
+              JAV-CG welcomes submissions that advance the state of the art in jointly modeling audio and video,
+              especially where cross-modal alignment, synchronized generation, and holistic reasoning are central.
+            </p> -->
+          </div>
+
+          <div class="cfp-grid">
+            <article class="submission-card">
+              <span class="panel-label">Submission Types</span>
+              <h3>What to submit</h3>
+              <p>
+                <strong>Technical, position, or perspective papers</strong> may present new methods, research visions,
+                open challenges, or forward-looking arguments related to joint audio-video comprehension and generation.
+              </p>
+              <p>
+                <strong>Featured papers</strong> may summarize original publications or accepted papers from major venues
+                that substantially advance audio-visual understanding, generation, or unified frameworks.
+              </p>
+              <p>
+                Submissions are expected to be written in English, double-blind, and formatted using the current ACM
+                two-column conference template. The proposal specifies a limit of <strong>up to 8 pages plus references</strong>.
+              </p>
+              <div class="chip-row">
+                <span class="chip">8-page limit + references</span>
+                <span class="chip">ACM format</span>
+                <span class="chip">Double blind</span>
+                <span class="chip">English only</span>
+              </div>
+              <div class="placeholder-banner">
+                Submission portal link can be inserted here once the workshop submission venue is finalized.
+              </div>
+            </article>
+
+            <article class="topic-panel surface">
+              <span class="panel-label">Topics and Themes</span>
+              <h3>Representative areas</h3>
+              <p>
+                The workshop proposal organizes JAV-CG around three topic clusters. The list below is representative
+                rather than exhaustive.
+              </p>
+              <div class="topic-columns">
+                <div class="topic-column">
+                  <h4>Audio-Visual Comprehension and Reasoning</h4>
+                  <ul class="topic-list">
+                    <li>Sound source localization and source separation</li>
+                    <li>Audio-visual event detection and localization</li>
+                    <li>Audio-visual question answering and scene understanding</li>
+                    <li>Spatial, temporal, and cross-modal reasoning</li>
+                    <li>Segmentation, grounding, retrieval, and AV trustworthiness</li>
+                  </ul>
+                </div>
+                <div class="topic-column">
+                  <h4>Audio-Video Content Generation</h4>
+                  <ul class="topic-list">
+                    <li>Video-to-audio and text-to-audio-video synthesis</li>
+                    <li>Audio-driven video generation and talking head animation</li>
+                    <li>Foley generation, spatial audio, and AV editing</li>
+                    <li>Music-conditioned generation and multimodal storytelling</li>
+                    <li>Controllable and semantically coherent AV synthesis</li>
+                  </ul>
+                </div>
+                <div class="topic-column">
+                  <h4>Unified Audio-Video Frameworks</h4>
+                  <ul class="topic-list">
+                    <li>Any-to-any multimodal generation involving audio and video</li>
+                    <li>Joint tokenization, alignment, and representation learning</li>
+                    <li>Unified encoder-decoder or MLLM architectures</li>
+                    <li>Pre-training, multi-task learning, and instruction tuning</li>
+                    <li>Benchmarks, datasets, and evaluation metrics for AV quality</li>
+                  </ul>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="speakers">
+        <div class="container">
+          <div class="section-top">
+            <div>
+              <span class="section-label">Keynote Speakers</span>
+              <h2 class="section-title">Invited leaders from JAV and multimodal AI</h2>
+            </div>
+            <!-- <p>
+              Portraits below are still placeholders, but the card layout is now prepared for large profile figures and
+              fuller talk information. Each card supports title plus expandable abstract and speaker bio.
+            </p> -->
+          </div>
+
+          <div class="speaker-grid">
+            <article class="speaker-card">
+              <div class="speaker-photo-wrap">
+                <div class="speaker-photo">AZ</div>
+              </div>
+              <div class="speaker-body">
+                <div class="speaker-meta">
+                  <h3>Andrew Zisserman</h3>
+                  <p>University of Oxford</p>
+                </div>
+                <div class="speaker-talk-title">
+                  <strong>Title</strong>
+                  <p>Audio-Visual Understanding and Reasoning</p>
+                </div>
+                <details class="speaker-detail">
+                  <summary>Abstract</summary>
+                  <div class="detail-content">
+                    <p>Placeholder abstract. Replace this with the final abstract once available. Suggested focus: robust correspondence learning, open-world audio-visual reasoning, long-form scene understanding, and trustworthy AV intelligence.</p>
+                  </div>
+                </details>
+                <details class="speaker-detail">
+                  <summary>Speaker Bio</summary>
+                  <div class="detail-content">
+                    <p>Placeholder speaker bio. Replace with official bio and optionally add a real portrait into the figure area above.</p>
+                  </div>
+                </details>
+              </div>
+            </article>
+
+            <article class="speaker-card">
+              <div class="speaker-photo-wrap">
+                <div class="speaker-photo">LW</div>
+              </div>
+              <div class="speaker-body">
+                <div class="speaker-meta">
+                  <h3>Limin Wang</h3>
+                  <p>Nanjing University</p>
+                </div>
+                <div class="speaker-talk-title">
+                  <strong>Title</strong>
+                  <p>Audio-Visual Generation and Editing</p>
+                </div>
+                <details class="speaker-detail">
+                  <summary>Abstract</summary>
+                  <div class="detail-content">
+                    <p>Placeholder abstract. Replace this with the final abstract once available. Suggested focus: synchronized generation pipelines, multimodal editing, and alignment between motion dynamics and sound.</p>
+                  </div>
+                </details>
+                <details class="speaker-detail">
+                  <summary>Speaker Bio</summary>
+                  <div class="detail-content">
+                    <p>Placeholder speaker bio. Replace with official bio and optionally add a real portrait into the figure area above.</p>
+                  </div>
+                </details>
+              </div>
+            </article>
+
+            <article class="speaker-card">
+              <div class="speaker-photo-wrap">
+                <div class="speaker-photo">AN</div>
+              </div>
+              <div class="speaker-body">
+                <div class="speaker-meta">
+                  <h3>Arsha Nagrani</h3>
+                  <p>Google DeepMind</p>
+                </div>
+                <div class="speaker-talk-title">
+                  <strong>Title</strong>
+                  <p>Unified Audio-Visual Understanding and Generation</p>
+                </div>
+                <details class="speaker-detail">
+                  <summary>Abstract</summary>
+                  <div class="detail-content">
+                    <p>Placeholder abstract. Replace this with the final abstract once available. Suggested focus: joint representation learning for AV intelligence and the path toward unified foundation models.</p>
+                  </div>
+                </details>
+                <details class="speaker-detail">
+                  <summary>Speaker Bio</summary>
+                  <div class="detail-content">
+                    <p>Placeholder speaker bio. Replace with official bio and optionally add a real portrait into the figure area above.</p>
+                  </div>
+                </details>
+              </div>
+            </article>
+
+            <article class="speaker-card">
+              <div class="speaker-photo-wrap">
+                <div class="speaker-photo">KG</div>
+              </div>
+              <div class="speaker-body">
+                <div class="speaker-meta">
+                  <h3>Kristen Grauman</h3>
+                  <p>University of Texas at Austin</p>
+                </div>
+                <div class="speaker-talk-title">
+                  <strong>Title</strong>
+                  <p>Embodied Audio-Visual Perceiving and Interaction</p>
+                </div>
+                <details class="speaker-detail">
+                  <summary>Abstract</summary>
+                  <div class="detail-content">
+                    <p>Placeholder abstract. Replace this with the final abstract once available. Suggested focus: embodied agents that listen and look jointly, with grounded interaction in real environments.</p>
+                  </div>
+                </details>
+                <details class="speaker-detail">
+                  <summary>Speaker Bio</summary>
+                  <div class="detail-content">
+                    <p>Placeholder speaker bio. Replace with official bio and optionally add a real portrait into the figure area above.</p>
+                  </div>
+                </details>
+              </div>
+            </article>
+
+            <article class="speaker-card">
+              <div class="speaker-photo-wrap">
+                <div class="speaker-photo">AT</div>
+              </div>
+              <div class="speaker-body">
+                <div class="speaker-meta">
+                  <h3>Antonio Torralba</h3>
+                  <p>Massachusetts Institute of Technology</p>
+                </div>
+                <div class="speaker-talk-title">
+                  <strong>Title</strong>
+                  <p>Audio-Visual Learning and Representation</p>
+                </div>
+                <details class="speaker-detail">
+                  <summary>Abstract</summary>
+                  <div class="detail-content">
+                    <p>Placeholder abstract. Replace this with the final abstract once available. Suggested focus: representation learning foundations for scalable multimodal perception and transferable AV features.</p>
+                  </div>
+                </details>
+                <details class="speaker-detail">
+                  <summary>Speaker Bio</summary>
+                  <div class="detail-content">
+                    <p>Placeholder speaker bio. Replace with official bio and optionally add a real portrait into the figure area above.</p>
+                  </div>
+                </details>
+              </div>
+            </article>
+
+            <article class="speaker-card">
+              <div class="speaker-photo-wrap">
+                <div class="speaker-photo">KH</div>
+              </div>
+              <div class="speaker-body">
+                <div class="speaker-meta">
+                  <h3>Kai Han</h3>
+                  <p>University of Hong Kong</p>
+                </div>
+                <div class="speaker-talk-title">
+                  <strong>Title</strong>
+                  <p>Joint Audio-Video Generation</p>
+                </div>
+                <details class="speaker-detail">
+                  <summary>Abstract</summary>
+                  <div class="detail-content">
+                    <p>Placeholder abstract. Replace this with the final abstract once available. Suggested focus: controllable AV synthesis, coherence across modalities, and benchmarking generation quality.</p>
+                  </div>
+                </details>
+                <details class="speaker-detail">
+                  <summary>Speaker Bio</summary>
+                  <div class="detail-content">
+                    <p>Placeholder speaker bio. Replace with official bio and optionally add a real portrait into the figure area above.</p>
+                  </div>
+                </details>
+              </div>
+            </article>
+
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="schedule">
+        <div class="container">
+          <div class="section-top">
+            <div>
+              <span class="section-label">Tentative Schedule</span>
+              <!-- <h2 class="section-title">A full-day structure balancing keynotes, discussion, and contributed papers</h2> -->
+            </div>
+            <!-- <p>
+              This schedule follows the current workshop proposal and should be treated as <strong>tentative</strong>.
+              Exact start times, session ordering, and accepted-paper slots will be refined closer to the event.
+            </p> -->
+          </div>
+
+          <div class="schedule-shell">
+            <article class="schedule-block surface">
+              <span class="panel-label">Morning</span>
+              <h3>Invited talks and panel discussion</h3>
+              <table class="schedule-table">
+                <thead>
+                  <tr>
+                    <th>Session</th>
+                    <th>Duration</th>
+                    <th>Speaker</th>
+                    <th>Affiliation</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td data-label="Session"><strong>Opening Address: Audio-Visual AI in the Age of LLMs</strong></td>
+                    <td data-label="Duration">5 min</td>
+                    <td data-label="Speaker">Tat-Seng Chua</td>
+                    <td data-label="Affiliation">National University of Singapore</td>
+                  </tr>
+                  <tr>
+                    <td data-label="Session"><strong>Audio-Visual Understanding and Reasoning</strong></td>
+                    <td data-label="Duration">30 min</td>
+                    <td data-label="Speaker">Andrew Zisserman</td>
+                    <td data-label="Affiliation">University of Oxford</td>
+                  </tr>
+                  <tr>
+                    <td data-label="Session"><strong>Audio-Visual Generation and Editing</strong></td>
+                    <td data-label="Duration">30 min</td>
+                    <td data-label="Speaker">Limin Wang</td>
+                    <td data-label="Affiliation">Nanjing University</td>
+                  </tr>
+                  <tr>
+                    <td data-label="Session"><strong>Coffee Break</strong></td>
+                    <td data-label="Duration">10 min</td>
+                    <td data-label="Speaker">-</td>
+                    <td data-label="Affiliation">-</td>
+                  </tr>
+                  <tr>
+                    <td data-label="Session"><strong>Panel Discussion: Universal Audio-Visual Intelligence</strong></td>
+                    <td data-label="Duration">30 min</td>
+                    <td data-label="Speaker">All speakers</td>
+                    <td data-label="Affiliation">Multi-institution panel</td>
+                  </tr>
+                  <tr>
+                    <td data-label="Session"><strong>Unified Audio-Visual Understanding and Generation</strong></td>
+                    <td data-label="Duration">30 min</td>
+                    <td data-label="Speaker">Arsha Nagrani</td>
+                    <td data-label="Affiliation">Google DeepMind</td>
+                  </tr>
+                  <tr>
+                    <td data-label="Session"><strong>Embodied Audio-Visual Perceiving and Interaction</strong></td>
+                    <td data-label="Duration">30 min</td>
+                    <td data-label="Speaker">Kristen Grauman</td>
+                    <td data-label="Affiliation">University of Texas at Austin</td>
+                  </tr>
+                </tbody>
+              </table>
+            </article>
+
+            <article class="schedule-block surface">
+              <span class="panel-label">Afternoon</span>
+              <h3>Focused invited talks and contributed paper sessions</h3>
+              <table class="schedule-table">
+                <thead>
+                  <tr>
+                    <th>Session</th>
+                    <th>Duration</th>
+                    <th>Speaker</th>
+                    <th>Affiliation</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td data-label="Session"><strong>Audio-Visual Learning and Representation</strong></td>
+                    <td data-label="Duration">15 min</td>
+                    <td data-label="Speaker">Antonio Torralba</td>
+                    <td data-label="Affiliation">Massachusetts Institute of Technology</td>
+                  </tr>
+                  <tr>
+                    <td data-label="Session"><strong>Contributed Paper Session I: Audio-Visual Comprehension</strong></td>
+                    <td data-label="Duration">15 min each</td>
+                    <td data-label="Speaker">TBD</td>
+                    <td data-label="Affiliation">Accepted papers</td>
+                  </tr>
+                  <tr>
+                    <td data-label="Session"><strong>Joint Audio-Video Generation</strong></td>
+                    <td data-label="Duration">15 min</td>
+                    <td data-label="Speaker">Kai Han</td>
+                    <td data-label="Affiliation">University of Hong Kong</td>
+                  </tr>
+                  <tr>
+                    <td data-label="Session"><strong>Contributed Paper Session II: Audio-Video Generation</strong></td>
+                    <td data-label="Duration">15 min each</td>
+                    <td data-label="Speaker">TBD</td>
+                    <td data-label="Affiliation">Accepted papers</td>
+                  </tr>
+                  <tr>
+                    <td data-label="Session"><strong>3D Audio-Visual Modeling and Embodiment</strong></td>
+                    <td data-label="Duration">15 min</td>
+                    <td data-label="Speaker">Baining Guo</td>
+                    <td data-label="Affiliation">Microsoft Research</td>
+                  </tr>
+                  <tr>
+                    <td data-label="Session"><strong>Contributed Paper Session III: Unified Audio-Visual Models</strong></td>
+                    <td data-label="Duration">15 min each</td>
+                    <td data-label="Speaker">TBD</td>
+                    <td data-label="Affiliation">Accepted papers</td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <p class="timeline-note">
+                The proposal notes that JAV-CG is intended as a full-day workshop when possible, while retaining
+                flexibility for a half-day adaptation if required by conference logistics.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="organizers">
+        <div class="container">
+          <div class="section-top">
+            <div>
+              <span class="section-label">Organizers</span>
+              <!-- <h2 class="section-title">An international organizing team across multimedia, AV learning, and foundation models</h2> -->
+            </div>
+            <!-- <p>
+              The organizer descriptions below are adapted from the workshop proposal and paired with avatar placeholders
+              so that you can later replace them with official photos when ready.
+            </p> -->
+          </div>
+
+          <div class="organizer-grid">
+            <article class="organizer-card">
+              <div class="organizer-avatar">YQ</div>
+              <div class="organizer-meta organizer-meta-centered">
+                <h3>You Qin</h3>
+                <p>National University of Singapore</p>
+              </div>
+              <div class="organizer-links">
+                <a class="text-link" href="https://42xingxing.github.io/" target="_blank" rel="noopener noreferrer">Homepage</a>
+              </div>
+            </article>
+
+            <article class="organizer-card">
+              <div class="organizer-avatar">KL</div>
+              <div class="organizer-meta organizer-meta-centered">
+                <h3>Kai Liu</h3>
+                <p>Zhejiang University</p>
+              </div>
+              <div class="organizer-links">
+                <a class="text-link" href="https://kail8.github.io/" target="_blank" rel="noopener noreferrer">Homepage</a>
+              </div>
+            </article>
+
+            <article class="organizer-card">
+              <div class="organizer-avatar">WJ</div>
+              <div class="organizer-meta organizer-meta-centered">
+                <h3>Wei Ji</h3>
+                <p>Nanjing University</p>
+              </div>
+              <div class="organizer-links">
+                <a class="text-link" href="https://jiwei0523.github.io/" target="_blank" rel="noopener noreferrer">Homepage</a>
+              </div>
+            </article>
+
+            <article class="organizer-card">
+              <div class="organizer-avatar">HF</div>
+              <div class="organizer-meta organizer-meta-centered">
+                <h3>Hao Fei</h3>
+                <p>University of Oxford</p>
+              </div>
+              <div class="organizer-links">
+                <a class="text-link" href="http://haofei.vip/" target="_blank" rel="noopener noreferrer">Homepage</a>
+              </div>
+            </article>
+
+            <article class="organizer-card">
+              <div class="organizer-avatar">LZ</div>
+              <div class="organizer-meta organizer-meta-centered">
+                <h3>Liang Zheng</h3>
+                <p>Australian National University</p>
+              </div>
+              <div class="organizer-links">
+                <a class="text-link" href="https://zheng-lab.cecs.anu.edu.au/" target="_blank" rel="noopener noreferrer">Homepage</a>
+              </div>
+            </article>
+
+            <article class="organizer-card">
+              <div class="organizer-avatar">RZ</div>
+              <div class="organizer-meta organizer-meta-centered">
+                <h3>Roger Zimmermann</h3>
+                <p>National University of Singapore</p>
+              </div>
+              <div class="organizer-links">
+                <a class="text-link" href="https://www.comp.nus.edu.sg/~rogerz/" target="_blank" rel="noopener noreferrer">Homepage</a>
+              </div>
+            </article>
+
+            <article class="organizer-card">
+              <div class="organizer-avatar">JL</div>
+              <div class="organizer-meta organizer-meta-centered">
+                <h3>Jiebo Luo</h3>
+                <p>University of Rochester</p>
+              </div>
+              <div class="organizer-links">
+                <a class="text-link" href="https://www.cs.rochester.edu/u/jluo/" target="_blank" rel="noopener noreferrer">Homepage</a>
+              </div>
+            </article>
+
+            <article class="organizer-card">
+              <div class="organizer-avatar">FW</div>
+              <div class="organizer-meta organizer-meta-centered">
+                <h3>Furu Wei</h3>
+                <p>Microsoft Research</p>
+              </div>
+              <div class="organizer-links">
+                <a class="text-link" href="https://thegenerality.com/" target="_blank" rel="noopener noreferrer">Homepage</a>
+              </div>
+            </article>
+
+            <article class="organizer-card">
+              <div class="organizer-avatar">TC</div>
+              <div class="organizer-meta organizer-meta-centered">
+                <h3>Tat-Seng Chua</h3>
+                <p>National University of Singapore</p>
+              </div>
+              <div class="organizer-links">
+                <a class="text-link" href="https://www.chuatatseng.com/" target="_blank" rel="noopener noreferrer">Homepage</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="contact">
+        <div class="container">
+          <div class="section-top section-top-compact">
+            <div>
+              <span class="section-label">Contact</span>
+            </div>
+          </div>
+
+          <ul class="contact-minimal">
+            <li>
+              <a href="https://42xingxing.github.io/" target="_blank" rel="noopener noreferrer">You Qin</a>
+              <span>(<a href="mailto:qinyou@u.nus.edu">qinyou@u.nus.edu</a>)</span>
+            </li>
+            <li>
+              <a href="https://kail8.github.io/" target="_blank" rel="noopener noreferrer">Kai Liu</a>
+              <span>(<a href="mailto:kail@zju.edu.cn">kail@zju.edu.cn</a>)</span>
+            </li>
+            <li>
+              <a href="http://haofei.vip/" target="_blank" rel="noopener noreferrer">Hao Fei</a>
+              <span>(<a href="mailto:haofei7419@gmail.com">haofei7419@gmail.com</a>)</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-simple">
+          © Copyright JAV-CG Workshop 2026 @ ACM MM 2026 | All Rights Reserved
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="./assets/js/main.js"></script>
+</body>
+</html>
