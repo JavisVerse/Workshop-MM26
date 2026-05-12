@@ -65,22 +65,21 @@ const topics = [
 ];
 
 const schedule = {
-  Morning: [
-    ["Opening Address: Audio-Visual AI in the Age of LLMs", "5 min", "Tat-Seng Chua", "National University of Singapore"],
-    ["Audio-Visual Understanding and Reasoning", "30 min", "Andrew Zisserman", "University of Oxford"],
-    ["Audio-Visual Generation and Editing", "30 min", "Limin Wang", "Nanjing University"],
-    ["Coffee Break", "10 min", "-", "-"],
-    ["Panel Discussion: Universal Audio-Visual Intelligence", "30 min", "All speakers", "Multi-institution panel"],
-    ["Unified Audio-Visual Understanding and Generation", "30 min", "Arsha Nagrani", "Google DeepMind"],
-    ["Embodied Audio-Visual Perceiving and Interaction", "30 min", "Kristen Grauman", "University of Texas at Austin"],
+  "Program Block 01": [
+    ["Session TBD 01", "Duration TBD", "Speaker TBD", "Affiliation TBD"],
+    ["Session TBD 02", "Duration TBD", "Speaker TBD", "Affiliation TBD"],
+    ["Session TBD 03", "Duration TBD", "Speaker TBD", "Affiliation TBD"],
+    ["Break TBD", "Duration TBD", "-", "-"],
+    ["Session TBD 04", "Duration TBD", "Speaker TBD", "Affiliation TBD"],
+    ["Session TBD 05", "Duration TBD", "Speaker TBD", "Affiliation TBD"],
   ],
-  Afternoon: [
-    ["Audio-Visual Learning and Representation", "15 min", "Antonio Torralba", "Massachusetts Institute of Technology"],
-    ["Contributed Paper Session I: Audio-Visual Comprehension", "15 min each", "TBD", "Accepted papers"],
-    ["Joint Audio-Video Generation", "15 min", "Kai Han", "University of Hong Kong"],
-    ["Contributed Paper Session II: Audio-Video Generation", "15 min each", "TBD", "Accepted papers"],
-    ["3D Audio-Visual Modeling and Embodiment", "15 min", "Baining Guo", "Microsoft Research"],
-    ["Contributed Paper Session III: Unified Audio-Visual Models", "15 min each", "TBD", "Accepted papers"],
+  "Program Block 02": [
+    ["Session TBD 06", "Duration TBD", "Speaker TBD", "Affiliation TBD"],
+    ["Session TBD 07", "Duration TBD", "Speaker TBD", "Affiliation TBD"],
+    ["Session TBD 08", "Duration TBD", "Speaker TBD", "Affiliation TBD"],
+    ["Break TBD", "Duration TBD", "-", "-"],
+    ["Session TBD 09", "Duration TBD", "Speaker TBD", "Affiliation TBD"],
+    ["Session TBD 10", "Duration TBD", "Speaker TBD", "Affiliation TBD"],
   ],
 };
 
@@ -179,7 +178,7 @@ function renderScheduleBlock(period, rows) {
     <article class="schedule-block">
       <div class="block-heading">
         <span class="section-kicker">${period}</span>
-        <h3>${period === "Morning" ? "Invited talks and panel discussion" : "Focused talks and contributed papers"}</h3>
+        <h3>Schedule details TBD</h3>
       </div>
       <table class="schedule-table">
         <thead>
@@ -361,11 +360,10 @@ document.getElementById("site-root").innerHTML = `
         <div class="container">
           <div class="section-heading">
             <span class="section-kicker">Tentative Schedule</span>
-            <h2>A full-day structure balancing keynotes, papers, and discussion.</h2>
+            <h2>Program schedule is TBD.</h2>
           </div>
           <div class="schedule-grid">
-            ${renderScheduleBlock("Morning", schedule.Morning)}
-            ${renderScheduleBlock("Afternoon", schedule.Afternoon)}
+            ${Object.entries(schedule).map(([period, rows]) => renderScheduleBlock(period, rows)).join("")}
           </div>
         </div>
       </section>
