@@ -64,15 +64,6 @@ const topics = [
   },
 ];
 
-const speakers = [
-  ["Andrew Zisserman", "University of Oxford", "Audio-Visual Understanding and Reasoning", "AZ"],
-  ["Limin Wang", "Nanjing University", "Audio-Visual Generation and Editing", "LW"],
-  ["Arsha Nagrani", "Google DeepMind", "Unified Audio-Visual Understanding and Generation", "AN"],
-  ["Kristen Grauman", "University of Texas at Austin", "Embodied Audio-Visual Perceiving and Interaction", "KG"],
-  ["Antonio Torralba", "Massachusetts Institute of Technology", "Audio-Visual Learning and Representation", "AT"],
-  ["Kai Han", "University of Hong Kong", "Joint Audio-Video Generation", "KH"],
-];
-
 const schedule = {
   Morning: [
     ["Opening Address: Audio-Visual AI in the Age of LLMs", "5 min", "Tat-Seng Chua", "National University of Singapore"],
@@ -149,22 +140,18 @@ function renderTopics() {
 }
 
 function renderSpeakers() {
-  return speakers
-    .map(
-      ([name, affiliation, title, abbr]) => `
-        <article class="speaker-card">
-          <div class="speaker-token" aria-hidden="true">${abbr}</div>
-          <div>
-            <h3>${name}</h3>
-            <p>${affiliation}</p>
-          </div>
-          <div class="speaker-talk">
-            <span>Title</span>
-            <strong>${title}</strong>
-          </div>
-        </article>`
-    )
-    .join("");
+  return `
+    <article class="speaker-card speaker-card-tbd">
+      <div class="speaker-token" aria-hidden="true">TBD</div>
+      <div>
+        <h3>TBD</h3>
+        <p>Keynote speakers will be announced soon.</p>
+      </div>
+      <div class="speaker-talk">
+        <span>Status</span>
+        <strong>To be determined</strong>
+      </div>
+    </article>`;
 }
 
 function renderScheduleBlock(period, rows) {
@@ -344,7 +331,7 @@ document.getElementById("site-root").innerHTML = `
         <div class="container">
           <div class="section-heading">
             <span class="section-kicker">Keynote Speakers</span>
-            <h2>Invited leaders from JAV and multimodal AI.</h2>
+            <h2>Keynote speakers to be announced.</h2>
           </div>
           <div class="speaker-grid">${renderSpeakers()}</div>
         </div>
