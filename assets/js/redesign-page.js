@@ -140,18 +140,38 @@ function renderTopics() {
 }
 
 function renderSpeakers() {
-  return `
-    <article class="speaker-card speaker-card-tbd">
-      <div class="speaker-token" aria-hidden="true">TBD</div>
-      <div>
-        <h3>TBD</h3>
-        <p>Keynote speakers will be announced soon.</p>
-      </div>
-      <div class="speaker-talk">
-        <span>Status</span>
-        <strong>To be determined</strong>
-      </div>
-    </article>`;
+  return Array.from({ length: 6 }, (_, index) => index + 1)
+    .map(
+      (slot) => `
+        <article class="speaker-card speaker-card-placeholder">
+          <div class="speaker-identity">
+            <div class="speaker-token" aria-hidden="true">TBD</div>
+            <div>
+              <h3>Speaker TBD ${String(slot).padStart(2, "0")}</h3>
+              <p>Affiliation TBD</p>
+            </div>
+          </div>
+          <div class="speaker-talk">
+            <span>Title</span>
+            <strong>Talk title TBD</strong>
+          </div>
+          <div class="speaker-detail-placeholder">
+            <div class="speaker-detail-header">
+              <strong>Abstract</strong>
+              <span aria-hidden="true">TBD</span>
+            </div>
+            <p>Abstract TBD. Final keynote abstract will be added after speaker confirmation.</p>
+          </div>
+          <div class="speaker-detail-placeholder">
+            <div class="speaker-detail-header">
+              <strong>Speaker Bio</strong>
+              <span aria-hidden="true">TBD</span>
+            </div>
+            <p>Speaker bio TBD. Official biography and portrait will be added after confirmation.</p>
+          </div>
+        </article>`
+    )
+    .join("");
 }
 
 function renderScheduleBlock(period, rows) {
@@ -331,7 +351,7 @@ document.getElementById("site-root").innerHTML = `
         <div class="container">
           <div class="section-heading">
             <span class="section-kicker">Keynote Speakers</span>
-            <h2>Keynote speakers to be announced.</h2>
+            <h2>Keynote speaker details are placeholders.</h2>
           </div>
           <div class="speaker-grid">${renderSpeakers()}</div>
         </div>

@@ -734,7 +734,7 @@ img {
 }
 
 .speaker-grid {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .speaker-card {
@@ -745,9 +745,16 @@ img {
   gap: 18px;
 }
 
-.speaker-card:not(.speaker-card-tbd) {
+.speaker-card:not(.speaker-card-tbd):not(.speaker-card-placeholder) {
   grid-template-rows: 72px 96px auto;
   align-content: start;
+}
+
+.speaker-card-placeholder {
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
 .speaker-card-tbd {
@@ -771,6 +778,25 @@ img {
   border: 4px solid rgba(255, 255, 255, 0.9);
   font-weight: 900;
   box-shadow: 0 10px 22px rgba(0, 0, 0, 0.18);
+}
+
+.speaker-identity {
+  min-height: 176px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  text-align: center;
+}
+
+.speaker-card-placeholder .speaker-token {
+  width: 96px;
+  height: 96px;
+  color: rgba(255, 255, 255, 0.94);
+  font-size: 0.92rem;
+  letter-spacing: 0.04em;
+  opacity: 0.86;
 }
 
 .speaker-card-tbd .speaker-token {
@@ -798,8 +824,16 @@ img {
   border-top: 1px solid var(--line);
 }
 
-.speaker-card:not(.speaker-card-tbd) .speaker-talk {
+.speaker-card:not(.speaker-card-tbd):not(.speaker-card-placeholder) .speaker-talk {
   align-self: start;
+}
+
+.speaker-card-placeholder .speaker-talk {
+  align-self: stretch;
+  padding: 16px 18px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: color-mix(in srgb, var(--accent) 7%, var(--surface));
 }
 
 .speaker-card-tbd .speaker-talk {
@@ -821,6 +855,41 @@ img {
 
 .speaker-talk strong {
   color: var(--card-text);
+}
+
+.speaker-detail-placeholder {
+  padding: 16px 18px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: color-mix(in srgb, var(--surface) 92%, white);
+}
+
+.speaker-detail-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  color: var(--card-text);
+}
+
+.speaker-detail-header strong {
+  font-size: 1rem;
+}
+
+.speaker-detail-header span {
+  flex: 0 0 auto;
+  padding: 6px 9px;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--accent) 8%, var(--surface));
+  color: var(--faint);
+  font-size: 0.68rem;
+  font-weight: 900;
+  letter-spacing: 0.04em;
+}
+
+.speaker-detail-placeholder p {
+  margin-top: 13px;
+  line-height: 1.62;
 }
 
 .schedule-grid {
