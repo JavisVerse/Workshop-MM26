@@ -546,7 +546,7 @@ img {
 }
 
 .section-heading {
-  max-width: 760px;
+  max-width: min(100%, 1120px);
   margin-bottom: 30px;
 }
 
@@ -558,6 +558,7 @@ img {
   font-family: var(--font-display);
   font-size: clamp(2rem, 4vw, 3.3rem);
   line-height: 1.02;
+  text-wrap: balance;
 }
 
 .variant-atlas .section-heading h2,
