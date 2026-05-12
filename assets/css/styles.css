@@ -879,8 +879,7 @@ img {
   height: 132px;
   border-radius: 999px;
   flex: 0 0 auto;
-  display: grid;
-  place-items: center;
+  display: block;
   background:
     radial-gradient(circle at 30% 28%, rgba(255, 255, 255, 0.82), transparent 24%),
     linear-gradient(135deg, #17304a, #163d49 55%, #cc6942);
@@ -888,9 +887,20 @@ img {
   font-family: "Space Grotesk", sans-serif;
   font-size: 2rem;
   font-weight: 700;
+  object-fit: cover;
+  object-position: center;
   border: 6px solid rgba(255, 255, 255, 0.96);
   box-shadow: 0 18px 34px rgba(10, 18, 27, 0.12);
   overflow: hidden;
+}
+
+.organizer-avatar-shengqiong {
+  object-position: 50% 56%;
+}
+
+.organizer-avatar-placeholder {
+  display: grid;
+  place-items: center;
 }
 
 .organizer-meta-centered {
