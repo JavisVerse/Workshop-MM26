@@ -8,8 +8,603 @@
   <link rel="icon" href="./assets/images/JavisVerse.png" />
   <link rel="stylesheet" href="./assets/css/redesign.css" />
 </head>
-<body data-variant="v2">
-  <div id="site-root"></div>
-  <script src="./assets/js/redesign-page.js"></script>
+<body class="variant-atlas">
+  <div class="page-shell">
+    <header class="site-header">
+      <div class="container header-row">
+        <a class="brand" href="#top" aria-label="JAV-CG home">
+          <img src="./assets/images/JavisVerse.png" alt="JavisVerse logo" />
+          <span>JAV-CG 2026</span>
+        </a>
+        <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="nav-links" aria-label="Primary navigation">
+          <a href="#about">About</a>
+          <a href="#dates">Dates</a>
+          <a href="#cfp">CFP</a>
+          <a href="#speakers">Speakers</a>
+          <a href="#schedule">Schedule</a>
+          <a href="#organizers">Organizers</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="container hero-layout">
+          <div class="hero-copy">
+            <span class="section-kicker">ACM Multimedia 2026 Workshop</span>
+            <h1>
+              <span>JAV-CG</span>
+              <small>The 1st International Workshop on Joint Audio-Video Comprehension and Generation</small>
+            </h1>
+            <p>
+              A dedicated forum for the next wave of audio-video intelligence, spanning robust multimodal
+              understanding, synchronized generation, and unified models that bridge perception and creation.
+            </p>
+            <div class="hero-actions">
+              <a class="button primary" href="#cfp">Explore CFP</a>
+              <a class="button secondary" href="https://2026.acmmm.org/" target="_blank" rel="noopener noreferrer">ACM MM 2026</a>
+              <a class="button secondary" href="https://javisverse.github.io/" target="_blank" rel="noopener noreferrer">JavisVerse</a>
+            </div>
+          </div>
+          <div class="hero-visual" aria-label="JAV-CG logo-inspired visual">
+            <div class="orbit orbit-a"></div>
+            <div class="orbit orbit-b"></div>
+            <img src="./assets/images/JavisVerse.png" alt="JavisVerse logo" />
+            <div class="signal signal-a">AUDIO</div>
+            <div class="signal signal-b">VIDEO</div>
+            <div class="signal signal-c">JOINT AI</div>
+          </div>
+        </div>
+        <div class="container fact-strip">
+          <article><span>Venue</span><strong>Rio de Janeiro, Brazil</strong></article>
+          <article><span>Dates</span><strong>10-14 November 2026</strong></article>
+          <article><span>Submission</span><strong>16 July 2026</strong></article>
+          <article><span>Scope</span><strong>Comprehension, Generation, Unified AV</strong></article>
+        </div>
+      </section>
+
+      <section class="section intro-section" id="about">
+        <div class="container two-column">
+          <div class="section-heading">
+            <span class="section-kicker">About</span>
+            <h2>Joint audio-video intelligence as one research problem.</h2>
+          </div>
+          <div class="prose">
+            <p>
+              Real-world multimedia is naturally audio-visual, yet many multimodal systems still treat sound as a side
+              channel. JAV-CG focuses on models that listen, see, reason, and generate synchronized multimedia in one
+              coherent framework.
+            </p>
+            <p>
+              The workshop brings together multimedia, audio and speech, computer vision, and multimodal foundation-model
+              communities to sharpen the research agenda for audio-video comprehension and generation.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="dates">
+        <div class="container">
+          <div class="section-heading">
+            <span class="section-kicker">Important Dates</span>
+            <h2>Submission timeline and event milestones.</h2>
+          </div>
+          <div class="date-grid">
+            <article class="date-card">
+              <span class="index">01</span>
+              <h3>Workshop Paper Submission</h3>
+              <strong>16 July 2026</strong>
+              <p>Official ACM MM 2026 workshop contribution deadline.</p>
+            </article>
+            <article class="date-card">
+              <span class="index">02</span>
+              <h3>Author Notification</h3>
+              <strong>06 August 2026</strong>
+              <p>Acceptance notification for workshop submissions.</p>
+            </article>
+            <article class="date-card">
+              <span class="index">03</span>
+              <h3>Camera-Ready / Final Metadata</h3>
+              <strong>20 August 2026</strong>
+              <p>Final accepted material and metadata due under the ACM MM 2026 workshop schedule.</p>
+            </article>
+            <article class="date-card">
+              <span class="index">04</span>
+              <h3>Author Registration</h3>
+              <strong>20 August 2026</strong>
+              <p>Registration deadline for accepted workshop contributions.</p>
+            </article>
+            <article class="date-card">
+              <span class="index">05</span>
+              <h3>ACM Multimedia 2026</h3>
+              <strong>10-14 November 2026</strong>
+              <p>Conference venue: Rio de Janeiro, Brazil.</p>
+            </article>
+            <article class="date-card">
+              <span class="index">06</span>
+              <h3>Workshop Day</h3>
+              <strong>Coming Soon</strong>
+              <p>Final agenda and exact workshop day will be updated after logistics are confirmed.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="cfp">
+        <div class="container cfp-layout">
+          <div class="submission-panel">
+            <span class="section-kicker">Call for Papers</span>
+            <h2>Welcomes submissions across understanding, generation, and unified AV modeling.</h2>
+            <p>
+              JAV-CG welcomes archival workshop papers intended for the ACM MM 2026 workshop proceedings, as well as
+              non-archival featured-paper submissions for workshop presentation. Technical, position, and perspective
+              papers may be up to 8 pages plus references.
+            </p>
+            <div class="chip-row">
+              <span>ACM format</span>
+              <span>Double blind</span>
+              <span>English only</span>
+              <span>Archival + non-archival</span>
+            </div>
+          </div>
+          <div class="topic-grid">
+            <article class="topic-card">
+              <h3>Audio-Visual Comprehension</h3>
+              <ul>
+                <li>Sound source localization and source separation</li>
+                <li>Audio-visual event detection and localization</li>
+                <li>Question answering, grounding, and scene reasoning</li>
+                <li>Trustworthy and long-form audio-visual understanding</li>
+              </ul>
+            </article>
+            <article class="topic-card">
+              <h3>Audio-Video Generation</h3>
+              <ul>
+                <li>Video-to-audio and text-to-audio-video synthesis</li>
+                <li>Audio-driven video generation and talking heads</li>
+                <li>Foley, spatial audio, multimodal editing, and music</li>
+                <li>Controllable synchronized generation across modalities</li>
+              </ul>
+            </article>
+            <article class="topic-card">
+              <h3>Unified AV Frameworks</h3>
+              <ul>
+                <li>Any-to-any multimodal generation involving audio and video</li>
+                <li>Joint tokenization, alignment, and representation learning</li>
+                <li>Unified encoder-decoder or MLLM architectures</li>
+                <li>Benchmarks, datasets, metrics, safety, and evaluation</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="speakers">
+        <div class="container">
+          <div class="section-heading">
+            <span class="section-kicker">Keynote Speakers</span>
+            <h2>Keynote speaker details are placeholders.</h2>
+          </div>
+          <div class="speaker-grid">
+            <article class="speaker-card speaker-card-placeholder">
+              <div class="speaker-identity">
+                <div class="speaker-token" aria-hidden="true">TBD</div>
+                <div>
+                  <h3>Speaker TBD 01</h3>
+                  <p>Affiliation TBD</p>
+                </div>
+              </div>
+              <div class="speaker-talk">
+                <span>Title</span>
+                <strong>Talk title TBD</strong>
+              </div>
+              <div class="speaker-detail-placeholder">
+                <div class="speaker-detail-header">
+                  <strong>Abstract</strong>
+                  <span aria-hidden="true">TBD</span>
+                </div>
+                <p>Abstract TBD. Final keynote abstract will be added after speaker confirmation.</p>
+              </div>
+              <div class="speaker-detail-placeholder">
+                <div class="speaker-detail-header">
+                  <strong>Speaker Bio</strong>
+                  <span aria-hidden="true">TBD</span>
+                </div>
+                <p>Speaker bio TBD. Official biography and portrait will be added after confirmation.</p>
+              </div>
+            </article>
+            <article class="speaker-card speaker-card-placeholder">
+              <div class="speaker-identity">
+                <div class="speaker-token" aria-hidden="true">TBD</div>
+                <div>
+                  <h3>Speaker TBD 02</h3>
+                  <p>Affiliation TBD</p>
+                </div>
+              </div>
+              <div class="speaker-talk">
+                <span>Title</span>
+                <strong>Talk title TBD</strong>
+              </div>
+              <div class="speaker-detail-placeholder">
+                <div class="speaker-detail-header">
+                  <strong>Abstract</strong>
+                  <span aria-hidden="true">TBD</span>
+                </div>
+                <p>Abstract TBD. Final keynote abstract will be added after speaker confirmation.</p>
+              </div>
+              <div class="speaker-detail-placeholder">
+                <div class="speaker-detail-header">
+                  <strong>Speaker Bio</strong>
+                  <span aria-hidden="true">TBD</span>
+                </div>
+                <p>Speaker bio TBD. Official biography and portrait will be added after confirmation.</p>
+              </div>
+            </article>
+            <article class="speaker-card speaker-card-placeholder">
+              <div class="speaker-identity">
+                <div class="speaker-token" aria-hidden="true">TBD</div>
+                <div>
+                  <h3>Speaker TBD 03</h3>
+                  <p>Affiliation TBD</p>
+                </div>
+              </div>
+              <div class="speaker-talk">
+                <span>Title</span>
+                <strong>Talk title TBD</strong>
+              </div>
+              <div class="speaker-detail-placeholder">
+                <div class="speaker-detail-header">
+                  <strong>Abstract</strong>
+                  <span aria-hidden="true">TBD</span>
+                </div>
+                <p>Abstract TBD. Final keynote abstract will be added after speaker confirmation.</p>
+              </div>
+              <div class="speaker-detail-placeholder">
+                <div class="speaker-detail-header">
+                  <strong>Speaker Bio</strong>
+                  <span aria-hidden="true">TBD</span>
+                </div>
+                <p>Speaker bio TBD. Official biography and portrait will be added after confirmation.</p>
+              </div>
+            </article>
+            <article class="speaker-card speaker-card-placeholder">
+              <div class="speaker-identity">
+                <div class="speaker-token" aria-hidden="true">TBD</div>
+                <div>
+                  <h3>Speaker TBD 04</h3>
+                  <p>Affiliation TBD</p>
+                </div>
+              </div>
+              <div class="speaker-talk">
+                <span>Title</span>
+                <strong>Talk title TBD</strong>
+              </div>
+              <div class="speaker-detail-placeholder">
+                <div class="speaker-detail-header">
+                  <strong>Abstract</strong>
+                  <span aria-hidden="true">TBD</span>
+                </div>
+                <p>Abstract TBD. Final keynote abstract will be added after speaker confirmation.</p>
+              </div>
+              <div class="speaker-detail-placeholder">
+                <div class="speaker-detail-header">
+                  <strong>Speaker Bio</strong>
+                  <span aria-hidden="true">TBD</span>
+                </div>
+                <p>Speaker bio TBD. Official biography and portrait will be added after confirmation.</p>
+              </div>
+            </article>
+            <article class="speaker-card speaker-card-placeholder">
+              <div class="speaker-identity">
+                <div class="speaker-token" aria-hidden="true">TBD</div>
+                <div>
+                  <h3>Speaker TBD 05</h3>
+                  <p>Affiliation TBD</p>
+                </div>
+              </div>
+              <div class="speaker-talk">
+                <span>Title</span>
+                <strong>Talk title TBD</strong>
+              </div>
+              <div class="speaker-detail-placeholder">
+                <div class="speaker-detail-header">
+                  <strong>Abstract</strong>
+                  <span aria-hidden="true">TBD</span>
+                </div>
+                <p>Abstract TBD. Final keynote abstract will be added after speaker confirmation.</p>
+              </div>
+              <div class="speaker-detail-placeholder">
+                <div class="speaker-detail-header">
+                  <strong>Speaker Bio</strong>
+                  <span aria-hidden="true">TBD</span>
+                </div>
+                <p>Speaker bio TBD. Official biography and portrait will be added after confirmation.</p>
+              </div>
+            </article>
+            <article class="speaker-card speaker-card-placeholder">
+              <div class="speaker-identity">
+                <div class="speaker-token" aria-hidden="true">TBD</div>
+                <div>
+                  <h3>Speaker TBD 06</h3>
+                  <p>Affiliation TBD</p>
+                </div>
+              </div>
+              <div class="speaker-talk">
+                <span>Title</span>
+                <strong>Talk title TBD</strong>
+              </div>
+              <div class="speaker-detail-placeholder">
+                <div class="speaker-detail-header">
+                  <strong>Abstract</strong>
+                  <span aria-hidden="true">TBD</span>
+                </div>
+                <p>Abstract TBD. Final keynote abstract will be added after speaker confirmation.</p>
+              </div>
+              <div class="speaker-detail-placeholder">
+                <div class="speaker-detail-header">
+                  <strong>Speaker Bio</strong>
+                  <span aria-hidden="true">TBD</span>
+                </div>
+                <p>Speaker bio TBD. Official biography and portrait will be added after confirmation.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="schedule">
+        <div class="container">
+          <div class="section-heading">
+            <span class="section-kicker">Tentative Schedule</span>
+            <h2>Program schedule is TBD.</h2>
+          </div>
+          <div class="schedule-grid">
+            <article class="schedule-block">
+              <div class="block-heading">
+                <span class="section-kicker">Program Block 01</span>
+                <h3>Schedule details TBD</h3>
+              </div>
+              <table class="schedule-table">
+                <thead>
+                  <tr>
+                    <th>Session</th>
+                    <th>Duration</th>
+                    <th>Speaker</th>
+                    <th>Affiliation</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td data-label="Session"><strong>Session TBD 01</strong></td>
+                    <td data-label="Duration">Duration TBD</td>
+                    <td data-label="Speaker">Speaker TBD</td>
+                    <td data-label="Affiliation">Affiliation TBD</td>
+                  </tr>
+                  <tr>
+                    <td data-label="Session"><strong>Session TBD 02</strong></td>
+                    <td data-label="Duration">Duration TBD</td>
+                    <td data-label="Speaker">Speaker TBD</td>
+                    <td data-label="Affiliation">Affiliation TBD</td>
+                  </tr>
+                  <tr>
+                    <td data-label="Session"><strong>Session TBD 03</strong></td>
+                    <td data-label="Duration">Duration TBD</td>
+                    <td data-label="Speaker">Speaker TBD</td>
+                    <td data-label="Affiliation">Affiliation TBD</td>
+                  </tr>
+                  <tr>
+                    <td data-label="Session"><strong>Break TBD</strong></td>
+                    <td data-label="Duration">Duration TBD</td>
+                    <td data-label="Speaker">-</td>
+                    <td data-label="Affiliation">-</td>
+                  </tr>
+                  <tr>
+                    <td data-label="Session"><strong>Session TBD 04</strong></td>
+                    <td data-label="Duration">Duration TBD</td>
+                    <td data-label="Speaker">Speaker TBD</td>
+                    <td data-label="Affiliation">Affiliation TBD</td>
+                  </tr>
+                  <tr>
+                    <td data-label="Session"><strong>Session TBD 05</strong></td>
+                    <td data-label="Duration">Duration TBD</td>
+                    <td data-label="Speaker">Speaker TBD</td>
+                    <td data-label="Affiliation">Affiliation TBD</td>
+                  </tr>
+                </tbody>
+              </table>
+            </article>
+            <article class="schedule-block">
+              <div class="block-heading">
+                <span class="section-kicker">Program Block 02</span>
+                <h3>Schedule details TBD</h3>
+              </div>
+              <table class="schedule-table">
+                <thead>
+                  <tr>
+                    <th>Session</th>
+                    <th>Duration</th>
+                    <th>Speaker</th>
+                    <th>Affiliation</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td data-label="Session"><strong>Session TBD 06</strong></td>
+                    <td data-label="Duration">Duration TBD</td>
+                    <td data-label="Speaker">Speaker TBD</td>
+                    <td data-label="Affiliation">Affiliation TBD</td>
+                  </tr>
+                  <tr>
+                    <td data-label="Session"><strong>Session TBD 07</strong></td>
+                    <td data-label="Duration">Duration TBD</td>
+                    <td data-label="Speaker">Speaker TBD</td>
+                    <td data-label="Affiliation">Affiliation TBD</td>
+                  </tr>
+                  <tr>
+                    <td data-label="Session"><strong>Session TBD 08</strong></td>
+                    <td data-label="Duration">Duration TBD</td>
+                    <td data-label="Speaker">Speaker TBD</td>
+                    <td data-label="Affiliation">Affiliation TBD</td>
+                  </tr>
+                  <tr>
+                    <td data-label="Session"><strong>Break TBD</strong></td>
+                    <td data-label="Duration">Duration TBD</td>
+                    <td data-label="Speaker">-</td>
+                    <td data-label="Affiliation">-</td>
+                  </tr>
+                  <tr>
+                    <td data-label="Session"><strong>Session TBD 09</strong></td>
+                    <td data-label="Duration">Duration TBD</td>
+                    <td data-label="Speaker">Speaker TBD</td>
+                    <td data-label="Affiliation">Affiliation TBD</td>
+                  </tr>
+                  <tr>
+                    <td data-label="Session"><strong>Session TBD 10</strong></td>
+                    <td data-label="Duration">Duration TBD</td>
+                    <td data-label="Speaker">Speaker TBD</td>
+                    <td data-label="Affiliation">Affiliation TBD</td>
+                  </tr>
+                </tbody>
+              </table>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="organizers">
+        <div class="container">
+          <div class="section-heading">
+            <span class="section-kicker">Organizers</span>
+            <h2>An international team across multimedia, AV learning, and foundation models.</h2>
+          </div>
+          <div class="organizer-grid">
+            <article class="organizer-card">
+              <img class="organizer-avatar" src="assets/images/organizers/you-qin.png" alt="You Qin" loading="lazy" decoding="async">
+              <h3>You Qin</h3>
+              <p>National University of Singapore</p>
+              <a href="https://42xingxing.github.io/" target="_blank" rel="noopener noreferrer">Homepage</a>
+            </article>
+            <article class="organizer-card">
+              <div class="organizer-avatar organizer-avatar-placeholder" aria-label="Kai Liu">KL</div>
+              <h3>Kai Liu</h3>
+              <p>Zhejiang University</p>
+              <a href="https://kail8.github.io/" target="_blank" rel="noopener noreferrer">Homepage</a>
+            </article>
+            <article class="organizer-card">
+              <img class="organizer-avatar organizer-avatar-shengqiong" src="assets/images/organizers/shengqiong-wu-workshop.png" alt="Shengqiong Wu" loading="lazy" decoding="async">
+              <h3>Shengqiong Wu</h3>
+              <p>University of Oxford</p>
+              <a href="https://sqwu.top/" target="_blank" rel="noopener noreferrer">Homepage</a>
+            </article>
+            <article class="organizer-card">
+              <img class="organizer-avatar" src="assets/images/organizers/wei-ji.jpg" alt="Wei Ji" loading="lazy" decoding="async">
+              <h3>Wei Ji</h3>
+              <p>Nanjing University</p>
+              <a href="https://jiwei0523.github.io/" target="_blank" rel="noopener noreferrer">Homepage</a>
+            </article>
+            <article class="organizer-card">
+              <img class="organizer-avatar" src="assets/images/organizers/hao-fei.jpg" alt="Hao Fei" loading="lazy" decoding="async">
+              <h3>Hao Fei</h3>
+              <p>University of Oxford</p>
+              <a href="http://haofei.vip/" target="_blank" rel="noopener noreferrer">Homepage</a>
+            </article>
+            <article class="organizer-card">
+              <img class="organizer-avatar" src="assets/images/organizers/liang-zheng.jpg" alt="Liang Zheng" loading="lazy" decoding="async">
+              <h3>Liang Zheng</h3>
+              <p>Australian National University</p>
+              <a href="https://zheng-lab.cecs.anu.edu.au/" target="_blank" rel="noopener noreferrer">Homepage</a>
+            </article>
+            <article class="organizer-card">
+              <img class="organizer-avatar" src="assets/images/organizers/roger-zimmermann.png" alt="Roger Zimmermann" loading="lazy" decoding="async">
+              <h3>Roger Zimmermann</h3>
+              <p>National University of Singapore</p>
+              <a href="https://www.comp.nus.edu.sg/~rogerz/" target="_blank" rel="noopener noreferrer">Homepage</a>
+            </article>
+            <article class="organizer-card">
+              <img class="organizer-avatar" src="assets/images/organizers/jiebo-luo.jpg" alt="Jiebo Luo" loading="lazy" decoding="async">
+              <h3>Jiebo Luo</h3>
+              <p>University of Rochester</p>
+              <a href="https://www.cs.rochester.edu/u/jluo/" target="_blank" rel="noopener noreferrer">Homepage</a>
+            </article>
+            <article class="organizer-card">
+              <img class="organizer-avatar" src="assets/images/organizers/tat-seng-chua.jpg" alt="Tat-Seng Chua" loading="lazy" decoding="async">
+              <h3>Tat-Seng Chua</h3>
+              <p>National University of Singapore</p>
+              <a href="https://www.chuatatseng.com/" target="_blank" rel="noopener noreferrer">Homepage</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact-section" id="contact">
+        <div class="container contact-layout">
+          <div>
+            <span class="section-kicker">Contact</span>
+            <h2>Workshop correspondence</h2>
+          </div>
+          <ul class="contact-list">
+            <li><a href="https://42xingxing.github.io/" target="_blank" rel="noopener noreferrer">You Qin</a> <span>qinyou@u.nus.edu</span></li>
+            <li><a href="https://kail8.github.io/" target="_blank" rel="noopener noreferrer">Kai Liu</a> <span>kail@zju.edu.cn</span></li>
+            <li><a href="https://sqwu.top/" target="_blank" rel="noopener noreferrer">Shengqiong Wu</a> <span>shengqiongwu@gmail.com</span></li>
+            <li><a href="http://haofei.vip/" target="_blank" rel="noopener noreferrer">Hao Fei</a> <span>haofei7419@gmail.com</span></li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <span>© Copyright JAV-CG Workshop 2026 @ ACM MM 2026 | All Rights Reserved</span>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    const navToggle = document.querySelector(".nav-toggle");
+    const navLinks = document.querySelector(".nav-links");
+    const pageLinks = Array.from(document.querySelectorAll(".nav-links a"));
+    const sections = pageLinks
+      .map((link) => document.querySelector(link.getAttribute("href")))
+      .filter(Boolean);
+
+    if (navToggle && navLinks) {
+      navToggle.addEventListener("click", () => {
+        const expanded = navToggle.getAttribute("aria-expanded") === "true";
+        navToggle.setAttribute("aria-expanded", String(!expanded));
+        navLinks.classList.toggle("is-open");
+      });
+
+      pageLinks.forEach((link) => {
+        link.addEventListener("click", () => {
+          navLinks.classList.remove("is-open");
+          navToggle.setAttribute("aria-expanded", "false");
+        });
+      });
+    }
+
+    if ("IntersectionObserver" in window) {
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (!entry.isIntersecting) return;
+            const id = `#${entry.target.id}`;
+            pageLinks.forEach((link) => {
+              link.classList.toggle("is-active", link.getAttribute("href") === id);
+            });
+          });
+        },
+        {
+          rootMargin: "-30% 0px -55% 0px",
+          threshold: 0.01,
+        }
+      );
+
+      sections.forEach((section) => observer.observe(section));
+    }
+  </script>
 </body>
 </html>
