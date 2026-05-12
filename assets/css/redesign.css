@@ -744,6 +744,11 @@ img {
   gap: 18px;
 }
 
+.speaker-card:not(.speaker-card-tbd) {
+  grid-template-rows: 72px 96px auto;
+  align-content: start;
+}
+
 .speaker-card-tbd {
   grid-column: 1 / -1;
   min-height: 210px;
@@ -790,6 +795,10 @@ img {
   align-self: end;
   padding-top: 16px;
   border-top: 1px solid var(--line);
+}
+
+.speaker-card:not(.speaker-card-tbd) .speaker-talk {
+  align-self: start;
 }
 
 .speaker-card-tbd .speaker-talk {
@@ -1135,6 +1144,10 @@ img {
 
   .schedule-block {
     padding-bottom: 8px;
+  }
+
+  .speaker-card:not(.speaker-card-tbd) {
+    grid-template-rows: auto;
   }
 
   .speaker-card-tbd {
