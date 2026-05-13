@@ -771,7 +771,15 @@ img {
   background: linear-gradient(135deg, var(--accent-2), var(--accent));
   color: #fff;
   box-shadow: 0 14px 30px color-mix(in srgb, var(--accent) 24%, transparent);
-  cursor: default;
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.submission-cta:hover,
+.submission-cta:focus-visible {
+  transform: translateY(-1px);
+  box-shadow: 0 16px 34px color-mix(in srgb, var(--accent) 30%, transparent);
 }
 
 .submission-cta span {
