@@ -760,6 +760,7 @@ img {
   width: 126px;
   min-height: 42px;
   flex: 0 0 auto;
+  appearance: none;
   border: 0;
   border-radius: var(--radius-small);
   display: inline-flex;
@@ -768,6 +769,8 @@ img {
   justify-content: center;
   gap: 2px;
   padding: 9px 13px;
+  font: inherit;
+  text-align: left;
   background: linear-gradient(135deg, var(--accent-2), var(--accent));
   color: #fff;
   box-shadow: 0 14px 30px color-mix(in srgb, var(--accent) 24%, transparent);
@@ -780,6 +783,12 @@ img {
 .submission-cta:focus-visible {
   transform: translateY(-1px);
   box-shadow: 0 16px 34px color-mix(in srgb, var(--accent) 30%, transparent);
+  text-decoration: none;
+}
+
+.submission-cta:focus-visible {
+  outline: 3px solid color-mix(in srgb, var(--accent-2) 40%, white);
+  outline-offset: 3px;
 }
 
 .submission-cta span {
