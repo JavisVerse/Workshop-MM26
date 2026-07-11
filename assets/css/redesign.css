@@ -567,6 +567,14 @@ img {
   color: var(--text);
 }
 
+.section-note {
+  max-width: 720px;
+  margin: 12px 0 0;
+  color: var(--muted);
+  font-size: 0.98rem;
+  line-height: 1.65;
+}
+
 .two-column {
   display: grid;
   grid-template-columns: minmax(280px, 0.82fr) minmax(0, 1fr);
@@ -1040,11 +1048,18 @@ img {
 }
 
 .block-heading {
-  padding: 24px 24px 10px;
+  padding: 24px;
 }
 
 .block-heading h3 {
   margin: 8px 0 0;
+}
+
+.block-note {
+  margin: 6px 0 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.55;
 }
 
 .schedule-table {
