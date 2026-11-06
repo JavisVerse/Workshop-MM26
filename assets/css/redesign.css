@@ -857,12 +857,12 @@ img {
   min-height: 250px;
   padding: 22px;
   display: grid;
-  grid-template-rows: auto auto 1fr;
+  grid-template-rows: auto;
   gap: 18px;
 }
 
 .speaker-card:not(.speaker-card-tbd):not(.speaker-card-placeholder) {
-  grid-template-rows: auto auto 1fr;
+  grid-template-rows: auto;
   align-content: start;
 }
 
@@ -1039,9 +1039,91 @@ img {
   line-height: 1.62;
 }
 
+.speaker-details {
+  padding: 16px 18px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: color-mix(in srgb, var(--surface) 92%, white);
+  align-self: start;
+}
+
+.speaker-details summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  color: var(--card-text);
+  font-weight: 800;
+  cursor: pointer;
+  list-style: none;
+}
+
+.speaker-details summary::-webkit-details-marker {
+  display: none;
+}
+
+.speaker-details summary::after {
+  content: "+";
+  color: var(--accent-strong);
+  font-size: 1.2rem;
+}
+
+.speaker-details[open] summary::after {
+  content: "−";
+}
+
+.speaker-details summary:focus-visible {
+  outline: 2px solid var(--accent-strong);
+  outline-offset: 5px;
+  border-radius: 3px;
+}
+
+.speaker-details p {
+  margin-top: 14px;
+  line-height: 1.65;
+}
+
 .schedule-grid {
   grid-template-columns: 1fr;
 }
+
+.poster-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+  padding: 24px;
+  border-top: 1px solid var(--line);
+}
+
+.poster-paper h4,
+.poster-guidelines h4 {
+  margin: 8px 0 12px;
+  color: var(--card-text);
+  font-size: 1.05rem;
+  line-height: 1.5;
+}
+
+.poster-paper p {
+  color: var(--card-muted);
+  margin: 0;
+}
+
+.poster-guidelines {
+  border-top: 1px solid var(--line);
+  padding: 24px;
+}
+
+.poster-guidelines ul {
+  padding-left: 20px;
+  margin: 0 0 16px;
+  color: var(--card-muted);
+  line-height: 1.65;
+}
+
+.poster-guidelines li + li {
+  margin-top: 6px;
+}
+
 
 .schedule-block {
   overflow: hidden;
@@ -1065,6 +1147,18 @@ img {
 .schedule-table {
   width: 100%;
   border-collapse: collapse;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
 
 .schedule-table th,
@@ -1307,6 +1401,7 @@ img {
   .date-grid,
   .topic-grid,
   .speaker-grid,
+  .poster-list,
   .organizer-grid,
   .fact-strip {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1367,6 +1462,7 @@ img {
   .date-grid,
   .topic-grid,
   .speaker-grid,
+  .poster-list,
   .organizer-grid,
   .fact-strip {
     grid-template-columns: 1fr;
