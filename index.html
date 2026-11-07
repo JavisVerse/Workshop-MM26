@@ -6,7 +6,7 @@
   <title>JAV-CG @ ACM MM 2026</title>
   <meta name="description" content="JAV-CG, the 1st International Workshop on Joint Audio-Video Comprehension and Generation at ACM Multimedia 2026." />
   <link rel="icon" href="./assets/images/JavisVerse.png" />
-  <link rel="stylesheet" href="./assets/css/redesign.css?v=20261108" />
+  <link rel="stylesheet" href="./assets/css/redesign.css?v=20261108-speakers" />
 </head>
 <body class="variant-atlas">
   <div class="page-shell">
@@ -201,78 +201,141 @@
           <div class="section-heading">
             <span class="section-kicker">Speakers</span>
             <h2>Keynote and invited speakers.</h2>
-            <p class="section-note">Explore the keynote and invited talks on audio-visual generation and learning. Select a talk abstract or speaker bio to read more.</p>
+            <p class="section-note">Three perspectives on audio-visual intelligence. Explore the talks and meet the speakers.</p>
           </div>
           <div class="speaker-grid">
             <article class="speaker-card" id="yapeng-tian">
+              <div class="speaker-session">
+                <span class="speaker-badge">Keynote</span>
+                <span class="speaker-duration">40 min · incl. Q&amp;A</span>
+              </div>
               <div class="speaker-identity">
-                <img class="speaker-avatar" src="assets/images/speakers/yapeng-tian.jpg" alt="Yapeng Tian" loading="lazy" decoding="async">
-                <div>
+                <img class="speaker-avatar" src="assets/images/speakers/yapeng-tian.jpg" alt="Yapeng Tian" width="96" height="96" loading="lazy" decoding="async">
+                <div class="speaker-nameplate">
                   <h3>Yapeng Tian</h3>
-                  <p>Assistant Professor, The University of Texas at Dallas</p>
-                  <a class="speaker-homepage" href="https://www.yapengtian.com/index.html" target="_blank" rel="noopener noreferrer">Homepage</a>
+                  <p class="speaker-role">Assistant Professor</p>
+                  <p class="speaker-institution">The University of Texas at Dallas</p>
                 </div>
+                <a class="speaker-homepage" href="https://www.yapengtian.com/index.html" target="_blank" rel="noopener noreferrer" aria-label="Yapeng Tian's homepage (opens in a new tab)">Homepage <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a>
               </div>
-              <div class="speaker-talk">
-                <span>Title</span>
-                <strong>Towards Holistic and Physically Consistent Audio-Visual Generation</strong>
+              <div class="speaker-talk"><h4>Towards Holistic and Physically Consistent Audio-Visual Generation</h4></div>
+              <div class="speaker-time">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+                <div><time datetime="2026-11-14T14:05:00-03:00">14:05–14:45</time><span>14 November · Rio de Janeiro (UTC−3)</span></div>
               </div>
-              <p class="block-note">14 November · 14:05–14:45 · Rio de Janeiro (UTC−3)</p>
-              <details class="speaker-details">
-                <summary>Talk abstract</summary>
-                <p>Generating rich audio-visual experiences requires integrating visible events, sounds beyond the camera’s view, and the physical relationships connecting what we see and hear. In this talk, I will present our recent work on multimodal generation, progressing from holistic audio generation to evaluating physical consistency in jointly generated audio and video. I will first introduce VinTAGe, which combines video and text conditioning to generate temporally synchronized on-screen and off-screen sounds while addressing modality bias. I will then present OmniSonic, which integrates speech with environmental sounds to enable more complete auditory scene synthesis. Finally, I will examine a fundamental question: do joint audio-video generation models understand physics? Through AV-Phys Bench, I will discuss how we evaluate physical commonsense within and across audio and video, and what current models reveal about the gap between perceptual plausibility and physical consistency. I will conclude with opportunities for building more controllable multimodal generative systems that faithfully capture the dynamics of the physical world.</p>
-              </details>
-              <details class="speaker-details">
-                <summary>Speaker bio</summary>
-                <p>Yapeng Tian is an Assistant Professor in the Computer Science Department at UT Dallas, where he leads the Computer Vision and Multimodal Computing Lab. His work has been recognized by the AAAI New Faculty Highlights, Cisco Faculty Research Award, and Amazon Research Award.</p>
-              </details>
+              <div class="speaker-actions">
+                <button class="speaker-action speaker-action-primary" type="button" data-speaker-dialog="yapeng-tian-abstract" aria-haspopup="dialog" aria-label="Read abstract by Yapeng Tian">Read abstract <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
+                <button class="speaker-action speaker-action-secondary" type="button" data-speaker-dialog="yapeng-tian-bio" aria-haspopup="dialog" aria-label="Read Yapeng Tian's biography">Biography</button>
+              </div>
+              <dialog class="speaker-dialog" id="yapeng-tian-abstract" aria-labelledby="yapeng-tian-abstract-heading">
+                <div class="speaker-dialog-header">
+                  <div><span class="speaker-dialog-label">Talk abstract</span><h2 id="yapeng-tian-abstract-heading">Yapeng Tian</h2></div>
+                  <button class="speaker-dialog-close" type="button" aria-label="Close dialog" autofocus><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg></button>
+                </div>
+                <div class="speaker-dialog-body">
+                  <h3 class="speaker-dialog-title">Towards Holistic and Physically Consistent Audio-Visual Generation</h3>
+                  <p>Generating rich audio-visual experiences requires integrating visible events, sounds beyond the camera’s view, and the physical relationships connecting what we see and hear. In this talk, I will present our recent work on multimodal generation, progressing from holistic audio generation to evaluating physical consistency in jointly generated audio and video. I will first introduce VinTAGe, which combines video and text conditioning to generate temporally synchronized on-screen and off-screen sounds while addressing modality bias. I will then present OmniSonic, which integrates speech with environmental sounds to enable more complete auditory scene synthesis. Finally, I will examine a fundamental question: do joint audio-video generation models understand physics? Through AV-Phys Bench, I will discuss how we evaluate physical commonsense within and across audio and video, and what current models reveal about the gap between perceptual plausibility and physical consistency. I will conclude with opportunities for building more controllable multimodal generative systems that faithfully capture the dynamics of the physical world.</p>
+                </div>
+              </dialog>
+              <dialog class="speaker-dialog" id="yapeng-tian-bio" aria-labelledby="yapeng-tian-bio-heading">
+                <div class="speaker-dialog-header">
+                  <div><span class="speaker-dialog-label">Speaker biography</span><h2 id="yapeng-tian-bio-heading">Yapeng Tian</h2></div>
+                  <button class="speaker-dialog-close" type="button" aria-label="Close dialog" autofocus><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg></button>
+                </div>
+                <div class="speaker-dialog-body">
+
+                  <p>Yapeng Tian is an Assistant Professor in the Computer Science Department at UT Dallas, where he leads the Computer Vision and Multimodal Computing Lab. His work has been recognized by the AAAI New Faculty Highlights, Cisco Faculty Research Award, and Amazon Research Award.</p>
+                </div>
+              </dialog>
             </article>
             <article class="speaker-card" id="hao-fei">
+              <div class="speaker-session">
+                <span class="speaker-badge">Invited talk</span>
+                <span class="speaker-duration">45 min</span>
+              </div>
               <div class="speaker-identity">
-                <img class="speaker-avatar" src="assets/images/organizers/hao-fei.jpg" alt="Hao Fei" loading="lazy" decoding="async">
-                <div>
+                <img class="speaker-avatar" src="assets/images/organizers/hao-fei.jpg" alt="Hao Fei" width="96" height="96" loading="lazy" decoding="async">
+                <div class="speaker-nameplate">
                   <h3>Hao Fei</h3>
-                  <p>Senior Postdoctoral Researcher, University of Oxford</p>
-                  <a class="speaker-homepage" href="https://haofei.vip/" target="_blank" rel="noopener noreferrer">Homepage</a>
+                  <p class="speaker-role">Senior Postdoctoral Researcher</p>
+                  <p class="speaker-institution">University of Oxford</p>
                 </div>
+                <a class="speaker-homepage" href="https://haofei.vip/" target="_blank" rel="noopener noreferrer" aria-label="Hao Fei's homepage (opens in a new tab)">Homepage <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a>
               </div>
-              <div class="speaker-talk">
-                <span>Invited talk</span>
-                <strong>Audio-Visual Intelligence in Large Foundation Models: A Comprehensive Survey</strong>
+              <div class="speaker-talk"><h4>Audio-Visual Intelligence in Large Foundation Models: A Comprehensive Survey</h4></div>
+              <div class="speaker-time">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+                <div><time datetime="2026-11-14T14:45:00-03:00">14:45–15:30</time><span>14 November · Rio de Janeiro (UTC−3)</span></div>
               </div>
-              <p class="block-note">14 November · 14:45–15:30 · Rio de Janeiro (UTC−3)</p>
-              <details class="speaker-details">
-                <summary>Talk abstract</summary>
-                <p>Audio-Visual Intelligence (AVI) has emerged as a central frontier in artificial intelligence, bridging auditory and visual modalities to enable machines that can perceive, generate, and interact in the multimodal real world. In the era of large foundation models, joint modeling of audio and vision has become increasingly crucial, i.e., not only for understanding but also for controllable generation and reasoning across dynamic, temporally grounded signals. Recent advances, such as Meta MovieGen and Google Veo-3, highlight the growing industrial and academic focus on unified audio–vision architectures that learn from massive multimodal data. However, despite rapid progress, the literature remains fragmented, spanning diverse tasks, inconsistent taxonomies, and heterogeneous evaluation practices that impede systematic comparison and knowledge integration. This survey provides the first comprehensive review of AVI through the lens of large foundation models. We establish a unified taxonomy covering the broad landscape of AVI tasks, ranging from understanding (e.g., speech recognition, sound localization) to generation (e.g., audio-driven video synthesis, video-to-audio) and interaction (e.g., dialogue, embodied, or agentic interfaces). We synthesize methodological foundations, including modality tokenization, cross-modal fusion, autoregressive and diffusion-based generation, large-scale pretraining, instruction alignment, and preference optimization. Furthermore, we curate representative datasets, benchmarks, and evaluation metrics, offering a structured comparison across task families and identifying open challenges in synchronization, spatial reasoning, controllability, and safety. By consolidating this rapidly expanding field into a coherent framework, this survey aims to serve as a foundational reference for future research on large-scale AVI.</p>
+              <div class="speaker-actions">
+                <button class="speaker-action speaker-action-primary" type="button" data-speaker-dialog="hao-fei-abstract" aria-haspopup="dialog" aria-label="Read abstract by Hao Fei">Read abstract <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
+                <button class="speaker-action speaker-action-secondary" type="button" data-speaker-dialog="hao-fei-bio" aria-haspopup="dialog" aria-label="Read Hao Fei's biography">Biography</button>
+              </div>
+              <dialog class="speaker-dialog" id="hao-fei-abstract" aria-labelledby="hao-fei-abstract-heading">
+                <div class="speaker-dialog-header">
+                  <div><span class="speaker-dialog-label">Talk abstract</span><h2 id="hao-fei-abstract-heading">Hao Fei</h2></div>
+                  <button class="speaker-dialog-close" type="button" aria-label="Close dialog" autofocus><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg></button>
+                </div>
+                <div class="speaker-dialog-body">
+                  <h3 class="speaker-dialog-title">Audio-Visual Intelligence in Large Foundation Models: A Comprehensive Survey</h3>
+                  <p>Audio-Visual Intelligence (AVI) has emerged as a central frontier in artificial intelligence, bridging auditory and visual modalities to enable machines that can perceive, generate, and interact in the multimodal real world. In the era of large foundation models, joint modeling of audio and vision has become increasingly crucial, i.e., not only for understanding but also for controllable generation and reasoning across dynamic, temporally grounded signals. Recent advances, such as Meta MovieGen and Google Veo-3, highlight the growing industrial and academic focus on unified audio–vision architectures that learn from massive multimodal data. However, despite rapid progress, the literature remains fragmented, spanning diverse tasks, inconsistent taxonomies, and heterogeneous evaluation practices that impede systematic comparison and knowledge integration. This survey provides the first comprehensive review of AVI through the lens of large foundation models. We establish a unified taxonomy covering the broad landscape of AVI tasks, ranging from understanding (e.g., speech recognition, sound localization) to generation (e.g., audio-driven video synthesis, video-to-audio) and interaction (e.g., dialogue, embodied, or agentic interfaces). We synthesize methodological foundations, including modality tokenization, cross-modal fusion, autoregressive and diffusion-based generation, large-scale pretraining, instruction alignment, and preference optimization. Furthermore, we curate representative datasets, benchmarks, and evaluation metrics, offering a structured comparison across task families and identifying open challenges in synchronization, spatial reasoning, controllability, and safety. By consolidating this rapidly expanding field into a coherent framework, this survey aims to serve as a foundational reference for future research on large-scale AVI.</p>
                 <p><a href="https://arxiv.org/abs/2605.04045" target="_blank" rel="noopener noreferrer">Survey paper</a></p>
-              </details>
-              <details class="speaker-details">
-                <summary>Speaker bio</summary>
-                <p>Hao Fei is a Senior Postdoctoral Researcher at the Department of Computer Science and the Big Data Institute, University of Oxford. His research focuses on natural language processing, computer vision, and multimodal learning, with an emphasis on large multimodal foundation models.</p>
-              </details>
+                </div>
+              </dialog>
+              <dialog class="speaker-dialog" id="hao-fei-bio" aria-labelledby="hao-fei-bio-heading">
+                <div class="speaker-dialog-header">
+                  <div><span class="speaker-dialog-label">Speaker biography</span><h2 id="hao-fei-bio-heading">Hao Fei</h2></div>
+                  <button class="speaker-dialog-close" type="button" aria-label="Close dialog" autofocus><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg></button>
+                </div>
+                <div class="speaker-dialog-body">
+
+                  <p>Hao Fei is a Senior Postdoctoral Researcher at the Department of Computer Science and the Big Data Institute, University of Oxford. His research focuses on natural language processing, computer vision, and multimodal learning, with an emphasis on large multimodal foundation models.</p>
+                </div>
+              </dialog>
             </article>
             <article class="speaker-card" id="chenliang-xu">
+              <div class="speaker-session">
+                <span class="speaker-badge">Keynote</span>
+                <span class="speaker-duration">40 min · incl. Q&amp;A</span>
+              </div>
               <div class="speaker-identity">
-                <img class="speaker-avatar" src="assets/images/speakers/chenliang-xu.jpg" alt="Chenliang Xu" loading="lazy" decoding="async">
-                <div>
+                <img class="speaker-avatar" src="assets/images/speakers/chenliang-xu.jpg" alt="Chenliang Xu" width="96" height="96" loading="lazy" decoding="async">
+                <div class="speaker-nameplate">
                   <h3>Chenliang Xu</h3>
-                  <p>Associate Professor, University of Rochester</p>
-                  <a class="speaker-homepage" href="https://cliangxu.github.io/" target="_blank" rel="noopener noreferrer">Homepage</a>
+                  <p class="speaker-role">Associate Professor</p>
+                  <p class="speaker-institution">University of Rochester</p>
                 </div>
+                <a class="speaker-homepage" href="https://cliangxu.github.io/" target="_blank" rel="noopener noreferrer" aria-label="Chenliang Xu's homepage (opens in a new tab)">Homepage <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a>
               </div>
-              <div class="speaker-talk">
-                <span>Title</span>
-                <strong>Multi-level Alignment in Audio-Visual Generation and Learning</strong>
+              <div class="speaker-talk"><h4>Multi-level Alignment in Audio-Visual Generation and Learning</h4></div>
+              <div class="speaker-time">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+                <div><time datetime="2026-11-14T16:00:00-03:00">16:00–16:40</time><span>14 November · Rio de Janeiro (UTC−3)</span></div>
               </div>
-              <p class="block-note">14 November · 16:00–16:40 · Rio de Janeiro (UTC−3)</p>
-              <details class="speaker-details">
-                <summary>Talk abstract</summary>
-                <p>How can machines connect what they see with what they hear to understand and generate coherent audio-visual experiences? This talk examines audio-visual alignment at multiple levels, ranging from semantic categories and object identities to the geometry and physical acoustics of a scene. I will present our recent work on three related problems. First, I will discuss audio-visual scene synthesis, where neural scene representations and physics-guided generative modeling enable spatial audio synthesis at novel source and listener positions. Second, I will describe sound separation guided by visual or language cues, including how pretrained audio generative models can isolate sounds without task-specific training. Third, I will introduce language-guided joint audio-visual editing, which modifies visual content and its accompanying sound while preserving source characteristics and maintaining consistency across modalities. Together, these studies show how the demands of audio-visual alignment change across tasks, from identifying a sound source to preserving content during editing and modeling how sound travels through a scene. I will discuss what these differences imply for designing models that produce semantically consistent and physically plausible audio-visual content.</p>
-              </details>
-              <details class="speaker-details">
-                <summary>Speaker bio</summary>
-                <p>Chenliang Xu is an Associate Professor of Computer Science at the University of Rochester. His research focuses on multimodal AI, integrating vision, sound, and language to understand and reason about dynamic scenes. He has coauthored 150 publications, and his work has received support from federal agencies including DARPA, ARPA-H, NIH, and NSF, as well as industry partners including Meta, Sony, Adobe, and Cisco. His honors include Rochester’s 2025 Edmund A. Hajim Outstanding Faculty Award, the James P. Wilmot Distinguished Professorship, and multiple paper and demonstration awards. He has served as an area chair for CVPR and ACM Multimedia and will serve as a Program Chair for WACV 2028. He received his Ph.D. from the University of Michigan in 2016.</p>
-              </details>
+              <div class="speaker-actions">
+                <button class="speaker-action speaker-action-primary" type="button" data-speaker-dialog="chenliang-xu-abstract" aria-haspopup="dialog" aria-label="Read abstract by Chenliang Xu">Read abstract <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
+                <button class="speaker-action speaker-action-secondary" type="button" data-speaker-dialog="chenliang-xu-bio" aria-haspopup="dialog" aria-label="Read Chenliang Xu's biography">Biography</button>
+              </div>
+              <dialog class="speaker-dialog" id="chenliang-xu-abstract" aria-labelledby="chenliang-xu-abstract-heading">
+                <div class="speaker-dialog-header">
+                  <div><span class="speaker-dialog-label">Talk abstract</span><h2 id="chenliang-xu-abstract-heading">Chenliang Xu</h2></div>
+                  <button class="speaker-dialog-close" type="button" aria-label="Close dialog" autofocus><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg></button>
+                </div>
+                <div class="speaker-dialog-body">
+                  <h3 class="speaker-dialog-title">Multi-level Alignment in Audio-Visual Generation and Learning</h3>
+                  <p>How can machines connect what they see with what they hear to understand and generate coherent audio-visual experiences? This talk examines audio-visual alignment at multiple levels, ranging from semantic categories and object identities to the geometry and physical acoustics of a scene. I will present our recent work on three related problems. First, I will discuss audio-visual scene synthesis, where neural scene representations and physics-guided generative modeling enable spatial audio synthesis at novel source and listener positions. Second, I will describe sound separation guided by visual or language cues, including how pretrained audio generative models can isolate sounds without task-specific training. Third, I will introduce language-guided joint audio-visual editing, which modifies visual content and its accompanying sound while preserving source characteristics and maintaining consistency across modalities. Together, these studies show how the demands of audio-visual alignment change across tasks, from identifying a sound source to preserving content during editing and modeling how sound travels through a scene. I will discuss what these differences imply for designing models that produce semantically consistent and physically plausible audio-visual content.</p>
+                </div>
+              </dialog>
+              <dialog class="speaker-dialog" id="chenliang-xu-bio" aria-labelledby="chenliang-xu-bio-heading">
+                <div class="speaker-dialog-header">
+                  <div><span class="speaker-dialog-label">Speaker biography</span><h2 id="chenliang-xu-bio-heading">Chenliang Xu</h2></div>
+                  <button class="speaker-dialog-close" type="button" aria-label="Close dialog" autofocus><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg></button>
+                </div>
+                <div class="speaker-dialog-body">
+
+                  <p>Chenliang Xu is an Associate Professor of Computer Science at the University of Rochester. His research focuses on multimodal AI, integrating vision, sound, and language to understand and reason about dynamic scenes. He has coauthored 150 publications, and his work has received support from federal agencies including DARPA, ARPA-H, NIH, and NSF, as well as industry partners including Meta, Sony, Adobe, and Cisco. His honors include Rochester’s 2025 Edmund A. Hajim Outstanding Faculty Award, the James P. Wilmot Distinguished Professorship, and multiple paper and demonstration awards. He has served as an area chair for CVPR and ACM Multimedia and will serve as a Program Chair for WACV 2028. He received his Ph.D. from the University of Michigan in 2016.</p>
+                </div>
+              </dialog>
             </article>
           </div>
         </div>
@@ -433,6 +496,22 @@
   </div>
 
   <script>
+    document.querySelectorAll("[data-speaker-dialog]").forEach((button) => {
+      button.addEventListener("click", () => {
+        const dialog = document.getElementById(button.dataset.speakerDialog);
+        if (dialog && !dialog.open) dialog.showModal();
+      });
+    });
+
+    document.querySelectorAll(".speaker-dialog").forEach((dialog) => {
+      dialog.querySelector(".speaker-dialog-close").addEventListener("click", () => dialog.close());
+      dialog.addEventListener("click", (event) => {
+        if (event.target !== dialog) return;
+        const bounds = dialog.getBoundingClientRect();
+        if (event.clientX < bounds.left || event.clientX > bounds.right || event.clientY < bounds.top || event.clientY > bounds.bottom) dialog.close();
+      });
+    });
+
     const navToggle = document.querySelector(".nav-toggle");
     const navLinks = document.querySelector(".nav-links");
     const pageLinks = Array.from(document.querySelectorAll(".nav-links a"));
