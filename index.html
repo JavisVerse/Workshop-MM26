@@ -6,7 +6,7 @@
   <title>JAV-CG @ ACM MM 2026</title>
   <meta name="description" content="JAV-CG, the 1st International Workshop on Joint Audio-Video Comprehension and Generation at ACM Multimedia 2026." />
   <link rel="icon" href="./assets/images/JavisVerse.png" />
-  <link rel="stylesheet" href="./assets/css/redesign.css?v=20261108-speakers" />
+  <link rel="stylesheet" href="./assets/css/redesign.css?v=20261124-gallery" />
 </head>
 <body class="variant-atlas">
   <div class="page-shell">
@@ -21,6 +21,7 @@
         </button>
         <nav class="nav-links" aria-label="Primary navigation">
           <a href="#about">About</a>
+          <a href="#moments">Photos</a>
           <a href="#dates">Dates</a>
           <a href="#cfp">CFP</a>
           <a href="#speakers">Speakers</a>
@@ -83,6 +84,78 @@
               communities to sharpen the research agenda for audio-video comprehension and generation.
             </p>
           </div>
+        </div>
+      </section>
+
+      <section class="section gallery-section" id="moments" aria-labelledby="moments-heading">
+        <div class="container">
+          <div class="section-heading gallery-heading">
+            <div>
+              <span class="section-kicker">Photo Gallery</span>
+              <h2 id="moments-heading">Workshop moments.</h2>
+              <p class="section-note">Ideas, talks, and conversations from JAV-CG. Select a photograph to explore.</p>
+            </div>
+            <p class="gallery-dateline">Rio de Janeiro<br><time datetime="2026-11-14">14 November 2026</time></p>
+          </div>
+          <div class="gallery-wall">
+            <figure class="gallery-piece gallery-piece-featured">
+              <button type="button" class="gallery-frame" data-gallery-photo="0" aria-label="Enlarge photo: Together at JAV-CG" aria-haspopup="dialog">
+                <img src="assets/images/highlights/event-05-thumb.jpg" srcset="assets/images/highlights/event-05-thumb.jpg 1000w, assets/images/highlights/event-05.jpg 1707w" sizes="(max-width: 720px) calc(100vw - 64px), (max-width: 900px) calc(100vw - 88px), 740px" width="1707" height="1280" alt="Three workshop participants in front of the JAV-CG title slide" loading="lazy" decoding="async">
+                <span class="gallery-enlarge" aria-hidden="true">View photograph</span>
+              </button>
+              <figcaption><span>Together at JAV-CG</span><small>A moment to remember</small></figcaption>
+            </figure>
+            <figure class="gallery-piece">
+              <button type="button" class="gallery-frame" data-gallery-photo="1" aria-label="Enlarge photo: Across sound and vision" aria-haspopup="dialog">
+                <img src="assets/images/highlights/event-01-thumb.jpg" width="1000" height="750" alt="A keynote presentation on audio-visual generation projected in the workshop room" loading="lazy" decoding="async">
+                <span class="gallery-enlarge" aria-hidden="true">View photograph</span>
+              </button>
+              <figcaption><span>Across sound and vision</span><small>Keynote session</small></figcaption>
+            </figure>
+            <figure class="gallery-piece">
+              <button type="button" class="gallery-frame" data-gallery-photo="2" aria-label="Enlarge photo: EMODY Flow" aria-haspopup="dialog">
+                <img src="assets/images/highlights/event-02-thumb.jpg" width="1000" height="750" alt="An oral presenter speaking beside the EMODY Flow title slide" loading="lazy" decoding="async">
+                <span class="gallery-enlarge" aria-hidden="true">View photograph</span>
+              </button>
+              <figcaption><span>EMODY Flow</span><small>Oral presentation</small></figcaption>
+            </figure>
+            <figure class="gallery-piece">
+              <button type="button" class="gallery-frame" data-gallery-photo="3" aria-label="Enlarge photo: Both-or-Neither" aria-haspopup="dialog">
+                <img src="assets/images/highlights/event-03-thumb.jpg" width="1000" height="750" alt="An oral presenter discussing joint audio-visual reasoning during the Both-or-Neither presentation" loading="lazy" decoding="async">
+                <span class="gallery-enlarge" aria-hidden="true">View photograph</span>
+              </button>
+              <figcaption><span>Both-or-Neither</span><small>Oral presentation</small></figcaption>
+            </figure>
+            <figure class="gallery-piece">
+              <button type="button" class="gallery-frame" data-gallery-photo="4" aria-label="Enlarge photo: Questions and perspectives" aria-haspopup="dialog">
+                <img src="assets/images/highlights/event-04-thumb.jpg" width="1000" height="750" alt="Participants exchanging questions and ideas with microphones among the audience seats" loading="lazy" decoding="async">
+                <span class="gallery-enlarge" aria-hidden="true">View photograph</span>
+              </button>
+              <figcaption><span>Questions and perspectives</span><small>Audience discussion</small></figcaption>
+            </figure>
+            <figure class="gallery-piece">
+              <button type="button" class="gallery-frame" data-gallery-photo="5" aria-label="Enlarge photo: The conversation continues" aria-haspopup="dialog">
+                <img src="assets/images/highlights/event-06-thumb.jpg" width="1000" height="750" alt="Workshop participants continuing a conversation in the meeting room" loading="lazy" decoding="async">
+                <span class="gallery-enlarge" aria-hidden="true">View photograph</span>
+              </button>
+              <figcaption><span>The conversation continues</span><small>Connecting through ideas</small></figcaption>
+            </figure>
+          </div>
+          <dialog class="gallery-dialog" id="gallery-dialog" aria-labelledby="gallery-caption">
+            <div class="gallery-dialog-toolbar">
+              <span>JAV-CG / Photo Gallery</span>
+              <button type="button" class="gallery-close" aria-label="Close photo gallery" autofocus>Close <span aria-hidden="true">×</span></button>
+            </div>
+            <div class="gallery-viewer">
+              <button type="button" class="gallery-prev gallery-control" aria-label="Previous photo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="m15 5-7 7 7 7"/></svg></button>
+              <img id="gallery-full-image" alt="">
+              <button type="button" class="gallery-next gallery-control" aria-label="Next photo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="m9 5 7 7-7 7"/></svg></button>
+            </div>
+            <div class="gallery-dialog-footer" aria-live="polite" aria-atomic="true">
+              <p id="gallery-caption"></p>
+              <span id="gallery-counter"></span>
+            </div>
+          </dialog>
         </div>
       </section>
 
@@ -481,6 +554,7 @@
     </footer>
   </div>
 
+  <script src="assets/js/gallery.js?v=20261124-gallery" defer></script>
   <script>
     document.querySelectorAll("[data-speaker-dialog]").forEach((button) => {
       button.addEventListener("click", () => {
